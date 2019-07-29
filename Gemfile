@@ -9,6 +9,10 @@ gem 'jquery-rails'
 gem 'bootstrap-sass', '3.3.7'
 gem 'rails-controller-testing'
 gem 'bcrypt', '3.1.12'
+
+gem 'carrierwave', '1.2.2'
+gem 'mini_magick', '4.7.0'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -63,6 +67,7 @@ end
 
 group :production do
   gem 'pg', '0.20.0'
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
